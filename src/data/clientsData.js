@@ -1,5 +1,4 @@
 // Import images
-import AmazonImage from '../images/brands/amazon_gray.png';
 import SonyImage from '../images/brands/sony_gray.png';
 import AdidasImage from '../images/brands/adidas_gray.png';
 import FilaImage from '../images/brands/fila_gray.png';
@@ -8,13 +7,15 @@ import SamsungImage from '../images/brands/samsung_gray.png';
 import CanonImage from '../images/brands/canon_gray.png';
 import PumaImage from '../images/brands/puma_gray.png';
 
-export const clientsHeading = 'Some of the brands that trust me';
+export const clientsHeading = 'Technical Skills';
+export const clientsHeading2 = '';
+export const clientsHeading3 = 'My Skills';
 
 export const clientsData = [
 	{
 		id: 1,
 		title: 'Amazon',
-		img: AmazonImage,
+		img: "https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5",
 	},
 	{
 		id: 2,
