@@ -1,14 +1,34 @@
+import { useState } from 'react';
 import Button from '../reusable/Button';
 import FormInput from '../reusable/FormInput';
 
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/022ede60-d78d-11ed-bd27-47b3be7286e7"; // TODO - fill on the later step
+
 const ContactForm = () => {
+	const [submitted, setSubmitted] = useState(false);
+	const handleSubmit = (evt) => {
+		setTimeout(() => {
+		  setSubmitted(true);
+		}, 100);
+	};
+
+	if (submitted) {
+		return (
+				<>
+					<div className="text-2xl">Thank you!</div>
+					<div className="text-md">I'll be in touch soon.</div>
+				</>
+		);
+	}
+	
 	return (
 		<div className="w-full lg:w-1/2">
 			<div className="leading-loose">
 				<form
-					onSubmit={(e) => {
-						e.preventDefault();
-					}}
+					action={FORM_ENDPOINT}
+					onSubmit={handleSubmit}
+					method="POST"
+					target="_blank"
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
