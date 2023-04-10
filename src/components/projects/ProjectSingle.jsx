@@ -27,8 +27,8 @@ const ProjectSingle = ({ title, category, image, deploy, github }) => {
 						{category}
 					</span>
 				</div>
-				<button className="p-4 rounded-full font-bold bg-blue-500 hover:bg-blue-700 text-primary-dark dark:text-primary-light"><a target="_blank" href={deploy}>Live Link</a></button>
-				<button className="p-4 rounded-full font-bold bg-blue-500 hover:bg-blue-700 text-primary-dark dark:text-primary-light"><a target="_blank" href={github}>GitHub Code</a></button>
+				<button className="p-4 rounded-full font-bold bg-blue-500 hover:bg-blue-700 text-primary-dark dark:text-primary-light"><a target="_blank" rel="noreferrer"  href={deploy}>Live Link</a></button>
+				<button className="p-4 rounded-full font-bold bg-blue-500 hover:bg-blue-700 text-primary-dark dark:text-primary-light"><a target="_blank" rel="noreferrer"  href={github}>GitHub Code</a></button>
 			</div>
 		</motion.div>
 	);
