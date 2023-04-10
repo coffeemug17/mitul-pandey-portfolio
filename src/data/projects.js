@@ -1,36 +1,41 @@
 // Import images
-import WebImage1 from '../images/web-project-1.jpg';
-import WebImage2 from '../images/web-project-2.jpg';
-import MobileImage1 from '../images/mobile-project-1.jpg';
-import MobileImage2 from '../images/mobile-project-2.jpg';
-import UIImage1 from '../images/ui-project-1.jpg';
-import UIImage2 from '../images/ui-project-2.jpg';
+import cards from '../images/cards.jpg';
 import aeromate from "../images/aeromate.jpg";
+import linkedup from "../images/LinkedUp.jpg";
+import workflowwiz from "../images/workflowwiz.jpg"
 
 export const projectsData = [
 	
 	{
 		id: 1,
-		title: 'Workflow Wiz',
+		title: 'LinkedUp',
 		category: 'Full-Stack Application',
-		img: UIImage1,
+		img: linkedup,
+		deploy: "https://linked-up.herokuapp.com/",
+		github: "https://github.com/coffeemug17/LinkedUp"
 	},
 	{
 		id: 2,
-		title: 'LinkedUp',
+		title: 'Workflow Wiz',
 		category: 'Full-Stack Application',
-		img: UIImage2,
+		img: workflowwiz,
+		deploy: "https://workflowwiz.herokuapp.com/",
+		github: "https://github.com/coffeemug17/workflowwiz"
 	},
 	{
 		id: 3,
 		title: 'Remembrance Rumble',
 		category: 'Web Application',
-		img: MobileImage1,
+		img: cards,
+		deploy: "https://coffeemug17.github.io/remembrance-rumble/",
+		github: "https://github.com/coffeemug17/remembrance-rumble"
 	},
 	{
 		id: 4,
 		title: 'Aeromate',
 		category: 'Full-Stack Application',
 		img: aeromate,
+		deploy: "https://aeromate.herokuapp.com/",
+		github: "https://github.com/coffeemug17/aeromate"
 	},
 ];

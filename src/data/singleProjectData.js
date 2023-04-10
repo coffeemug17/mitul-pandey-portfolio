@@ -1,5 +1,4 @@
 // Import images
-import Image1 from '../images/ui-project-1.jpg';
 import Image2 from '../images/web-project-2.jpg';
 import Image3 from '../images/mobile-project-2.jpg';
 import Image4 from '../images/mobile-project-1.jpg';
@@ -24,7 +23,7 @@ export const singleProjectData = {
 		{
 			id: 1,
 			title: 'Kabul Project Management UI',
-			img: Image1,
+			img: Image2,
 		},
 		{
 			id: 2,

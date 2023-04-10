@@ -99,6 +99,8 @@ const ProjectsGrid = () => {
 							<ProjectSingle
 								title={project.title}
 								category={project.category}
+								deploy={project.deploy}
+								github={project.github}
 								image={project.img}
 								key={project.id}
 							/>
@@ -108,6 +110,8 @@ const ProjectsGrid = () => {
 							<ProjectSingle
 								title={project.title}
 								category={project.category}
+								deploy={project.deploy}
+								github={project.github}
 								image={project.img}
 								key={project.id}
 							/>
@@ -116,6 +120,8 @@ const ProjectsGrid = () => {
 							<ProjectSingle
 								title={project.title}
 								category={project.category}
+								deploy={project.deploy}
+								github={project.github}
 								image={project.img}
 								key={project.id}
 							/>
