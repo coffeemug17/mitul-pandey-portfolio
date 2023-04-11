@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import Button from './reusable/Button';
+
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/022ede60-d78d-11ed-bd27-47b3be7286e7"; // TODO - fill on the later step
 
 const selectOptions = [
 	'Web Application',
@@ -8,6 +11,20 @@ const selectOptions = [
 ];
 
 const HireMeModal = ({ onClose, onRequest }) => {
+	const [submitted, setSubmitted] = useState(false);
+	const handleSubmit = (evt) => {
+		setTimeout(() => {
+		  setSubmitted(true);
+		}, 100);
+	};
+
+	if (submitted) {
+		return (
+				<>
+				</>
+		);
+	}
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -35,9 +52,10 @@ const HireMeModal = ({ onClose, onRequest }) => {
 						</div>
 						<div className="modal-body p-5 w-full h-full">
 							<form
-								onSubmit={(e) => {
-									e.preventDefault();
-								}}
+								action={FORM_ENDPOINT}
+								onSubmit={handleSubmit}
+								method="POST"
+								target="_blank"
 								className="max-w-xl m-4 text-left"
 							>
 								<div className="">
@@ -96,7 +114,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 
 								<div className="mt-6 pb-4 sm:pb-1">
 									<span
-										onClick={onClose}
+										// onClick={onClose}
 										type="submit"
 										className="px-4
 											sm:px-6
@@ -109,9 +127,10 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											focus:ring-1 focus:ring-indigo-900 duration-500"
 										aria-label="Submit Request"
 									>
-										<Button title="Send Request" />
+										<button type='submit'>Send Request</button>
 									</span>
 								</div>
+								
 							</form>
 						</div>
 						<div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
