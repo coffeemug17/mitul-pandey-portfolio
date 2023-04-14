@@ -1,13 +1,13 @@
-import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
+import { FiPhone, FiMail } from 'react-icons/fi';
 
 const contacts = [
 	{
-		id: 2,
+		id: 1,
 		name: 'mitulpandey2@gmail.com',
 		icon: <FiMail />,
 	},
 	{
-		id: 3,
+		id: 2,
 		name: '(604)-726-1769',
 		icon: <FiPhone />,
 	},
