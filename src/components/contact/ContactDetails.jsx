@@ -2,11 +2,6 @@ import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 
 const contacts = [
 	{
-		id: 1,
-		name: '4514 Bellevue Drive, Vancouver, BC, Canada',
-		icon: <FiMapPin />,
-	},
-	{
 		id: 2,
 		name: 'mitulpandey2@gmail.com',
 		icon: <FiMail />,
